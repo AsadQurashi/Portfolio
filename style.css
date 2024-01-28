@@ -1,0 +1,71 @@
+body {
+    background-color: #F5EEE6;
+}
+
+/* Header */
+
+/* Navbar Box */
+.navbar {
+    margin: 2% 0 2% 0;
+    padding: 1% 0 1% 0;
+    background-image: linear-gradient(#bdc3c7, #2c3e50);
+}
+
+/* Logo */
+.navbar-brand {
+    color: white;
+    margin-left: 10%;
+    padding: 10px;
+    border-radius: 4px;
+    transition: font-size 0.5s ease, color 0.5s ease;
+}
+
+.navbar-brand:hover {
+    animation: font-size 4s infinite;
+    color: white;
+}
+
+@keyframes font-size {
+    0% {
+        background-color: rgba(33, 45, 56, 0.77);
+        font-size: 16px;
+    }
+
+    50% {
+        background-color: rgba(33, 56, 77, 0.5);
+        font-size: 24px;
+    }
+
+    100% {
+        background-color: rgba(33, 45, 56, 0.77);
+        font-size: 16px;
+    }
+}
+
+/* .navbar-brand:hover {
+    background-color: rgb(33 , 45 , 56 , 0.77);
+    color: #0F1035;
+    transition: color 4s ease;
+} */
+
+/* Other Navbar element box*/
+.collapse {
+    margin-left: 40%;
+}
+
+/* Other Navbar element/navigation */
+.nav-item {
+    border-radius: 4px;
+}
+
+.nav-link {
+    margin: 0 10px 0 10px;
+    padding: 10px;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: #EEEDEB;
+    color: #0a5e43;
+    transition: color 0.5 ease;
+}
