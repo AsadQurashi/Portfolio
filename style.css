@@ -1,44 +1,68 @@
 body {
     background-color: #F5EEE6;
+    margin: 0.9%;
 }
 
 /* Header */
+#first_section {
+    text-align: center;
+}
 
 /* Navbar Box */
 .navbar {
+    display: flex;
+    justify-content: center;
     margin: 2% 0 2% 0;
     padding: 1% 0 1% 0;
     background-image: linear-gradient(#bdc3c7, #2c3e50);
 }
 
-/* Logo */
-.navbar-brand {
-    color: white;
-    margin-left: 10%;
-    padding: 10px;
+/* Brand Box */
+.brand-box {
+    align-items: center;
+    background-color: #2c3e50;
     border-radius: 4px;
-    transition: font-size 0.5s ease, color 0.5s ease;
+    margin-left: 12%;
+    width: 120px;
+    height: 40px;
+    transition: background-color 0.5s linear;
+    /* padding-top: 0.3%;
+    padding-left: 0.7%; */
+    display: flex;
+    justify-content: center;
+
 }
 
-.navbar-brand:hover {
-    animation: font-size 4s infinite;
+.brand-box:hover {
+    animation: background-color 2s infinite;
+}
+
+.navbar-brand {
+    margin: 0 10px 0 10px;
+    padding: 10px;
     color: white;
 }
 
-@keyframes font-size {
+.brand-box:hover .navbar-brand {
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@keyframes background-color {
     0% {
-        background-color: rgba(33, 45, 56, 0.77);
-        font-size: 16px;
+        background-color: rgba(65, 132, 196, 0.77);
+        color: white;
     }
 
     50% {
-        background-color: rgba(33, 56, 77, 0.5);
-        font-size: 24px;
+        background-color: rgba(203, 208, 212, 0.5);
+        color: antiquewhite;
     }
 
     100% {
-        background-color: rgba(33, 45, 56, 0.77);
-        font-size: 16px;
+        background-color: rgba(18, 115, 205, 0.77);
+        color: white;
     }
 }
 
@@ -53,19 +77,84 @@ body {
     margin-left: 40%;
 }
 
+
 /* Other Navbar element/navigation */
-.nav-item {
-    border-radius: 4px;
+.item-box {
+    background-color: rgb(red, green, blue);
+
 }
 
 .nav-link {
     margin: 0 10px 0 10px;
     padding: 10px;
     color: white;
+    border-radius: 4px;
 }
 
-.nav-item:hover {
+.item-box:hover .nav-link {
     background-color: #EEEDEB;
-    color: #0a5e43;
-    transition: color 0.5 ease;
+    border-radius: 4px;
+    color: #2c3e50;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Personal Info/About Me */
+#Personal {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #2c3e50;
+    padding: 3%;
+
+}
+
+/* Img */
+.Img {
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    display: flex;
+}
+
+/* Info */
+#name {
+    color: aliceblue;
+    margin-top: 1.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#education {
+    color: aliceblue;
+    text-decoration: underline;
+    margin-top: 1%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#bio {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+#explained {
+    color: aliceblue;
+    font-size: medium;
+}
+
+#suggestion {
+    color: #F5EBEB;
+    font-size: 3rem;
+}
+
+/* Skills */
+#skills {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #2c3e50;
+    padding: 1% 2% 1% 2%;
+}
+
+#passion {
+    color: aliceblue;
+    font-size: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

@@ -24,23 +24,30 @@
   <div id="first_section" class="sticky-top">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Asad Khan</a>
+        <div class="brand-box">
+          <a class="navbar-brand">Asad Khan</a>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#Personal">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#work">Work</a>
-            </li>
+            <div class="item-box">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Personal">About Me</a>
+              </li>
+            </div>
+            <div class="item-box">
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+            </div>
+            <div class="item-box">
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+            </div>
             <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#contact" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -56,9 +63,11 @@
               </ul>
             </li> -->
 
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Me</a>
-            </li>
+            <div class="item-box">
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
+            </div>
           </ul>
         </div>
       </div>
@@ -67,15 +76,13 @@
 
   <!-- Personal Info -->
   <div id="Personal">
-    <div id="img">
-      <img
-        src="./Picture/caucasian-beautiful-lady-glasses-smiling-near-3d-printing-machine-her-office-new-technologies-small-businesses-concept-computer-prototypes-table-tech-ambient-jpg-photo_633478-537.avif"
-        alt="My Picture">
-    </div>
+    <img class="Img"
+      src="./Picture/caucasian-beautiful-lady-glasses-smiling-near-3d-printing-machine-her-office-new-technologies-small-businesses-concept-computer-prototypes-table-tech-ambient-jpg-photo_633478-537.avif"
+      alt="My Picture">
     <div id="Info">
-      <h1 id="name">I'm Asad Khan</h1> <br>
-      <h1 id="education">Education</h1> <br>
-      <h3>Aspiring Software Engineer | Web & App Developer</h3>
+      <h1 id="name">I'm Asad Khan</h1> 
+      <h1 id="education">Education</h1> 
+      <h3 id="bio">Aspiring Software Engineer | Web & App Developer</h3>
       <p id="explained">
         Hey there! 👋 I'm a Software Engineering student at <strong>COMSATS University</strong>, with a passion for
         turning ideas into digital reality. In my 4th semester, I dived into the world of <strong>Web
@@ -92,104 +99,102 @@
 
   <!-- Skills -->
   <div id="skills">
-    <div id="skills">
-      <div id="interest">
-        <h1 id="passion">Interest In</h1>
-        <p id="p-detail">I'm interested in <strong>Web Development</strong>|<strong>App Development</strong></p>
-      </div>
-      <div id="experties">
-        <h1 id="capability">Skills</h1>
-        <ol type="I" id="order-list">
-          <li id="ex-list">Html</li>
-          <li id="ex-list">React Js</li>
-          <li id="ex-list">CSS</li>
-          <li id="ex-list">JS</li>
-          <li id="ex-list">Node JS</li>
-          <li id="ex-list">React Native</li>
-          <ol type="i" id="inner-ol">
-            <h3 id="db">For Data Base</h3>
-            <li id="ex-list">Atlas DB</li>
-            <li id="ex-list">Fire Base</li>
-          </ol>
-        </ol>
-      </div>
+    <div id="interest">
+      <h1 id="passion">Interest In</h1>
+      <p id="p-detail">I'm interested in <strong>Web Development</strong>|<strong>App Development</strong></p>
     </div>
+    <div id="experties">
+      <h1 id="capability">Skills</h1>
+      <ol type="I" id="order-list">
+        <li id="ex-list">Html</li>
+        <li id="ex-list">React Js</li>
+        <li id="ex-list">CSS</li>
+        <li id="ex-list">JS</li>
+        <li id="ex-list">Node JS</li>
+        <li id="ex-list">React Native</li>
+        <ol type="i" id="inner-ol">
+          <h3 id="db">For Data Base</h3>
+          <li id="ex-list">Atlas DB</li>
+          <li id="ex-list">Fire Base</li>
+        </ol>
+      </ol>
+    </div>
+  </div>
 
-    <!-- Work History -->
-    <div id="work">
-      <h3 class="work-demo">Work</h3>
-      <h4 class="once-over">Let's take a look to my work</h4>
-      <div class=row>
-        <!-- pic 1 -->
-        <div class="col-sm-6 mb-sm-3 mb-sm-3">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
+  <!-- Work History -->
+  <div id="work">
+    <h3 class="work-demo">Work</h3>
+    <h4 class="once-over">Let's take a look to my work</h4>
+    <div class=row>
+      <!-- pic 1 -->
+      <div class="col-sm-6 mb-sm-3 mb-sm-3">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
           </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
         </div>
+      </div>
 
-        <!-- pic 2 -->
-        <div class="col-sm-6">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
+      <!-- pic 2 -->
+      <div class="col-sm-6">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
           </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
         </div>
+      </div>
 
-        <!-- pic 3 -->
-        <div class="col-sm-6">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
+      <!-- pic 3 -->
+      <div class="col-sm-6">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
           </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
         </div>
+      </div>
 
-        <!-- pic 4 -->
-        <div class="col-sm-6">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
+      <!-- pic 4 -->
+      <div class="col-sm-6">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
           </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -222,4 +227,3 @@
       <i class="fa-brands fa-linkedin"></i>
     </div>
   </div>
-
