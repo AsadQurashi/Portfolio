@@ -38,13 +38,18 @@ body {
 }
 
 .navbar-brand {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
     margin: 0 10px 0 10px;
     padding: 10px;
     color: white;
+    transition: color 0.5s ease;
 }
 
 .brand-box:hover .navbar-brand {
-    color: white;
+    color: #032435;
+    font-weight: bolder;
     font-size: 1.5em;
     cursor: pointer;
 }
@@ -52,17 +57,17 @@ body {
 @keyframes background-color {
     0% {
         background-color: rgba(65, 132, 196, 0.77);
-        color: white;
+        color: #032435;
     }
 
     50% {
         background-color: rgba(203, 208, 212, 0.5);
-        color: antiquewhite;
+        color: #651bdd;
     }
 
     100% {
         background-color: rgba(18, 115, 205, 0.77);
-        color: white;
+        color: #032435;
     }
 }
 
@@ -110,7 +115,7 @@ body {
 
 /* Img */
 .Img {
-    width: 300px;
+    width: 400px;
     height: 350px;
     border-radius: 15px;
     display: flex;
@@ -120,27 +125,40 @@ body {
 #name {
     color: aliceblue;
     margin-top: 1.5%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Oswald",
+        sans-serif;
+    font-optical-sizing: auto;
 }
 
 #education {
     color: aliceblue;
     text-decoration: underline;
     margin-top: 1%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Lobster",
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #bio {
     color: aliceblue;
     text-decoration: underline;
+    font-family: "Oswald",
+        sans-serif;
+    font-optical-sizing: auto;
 }
 
 #explained {
     color: aliceblue;
-    font-size: medium;
+    font-family: "Playfair Display",
+        serif;
+    font-optical-sizing: auto;
 }
 
 #suggestion {
+
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
     color: #F5EBEB;
     font-size: 3rem;
 }
@@ -155,17 +173,26 @@ body {
 
 #passion {
     color: aliceblue;
-    font-size: 2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Lobster",
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #p-detail {
     color: aliceblue;
+    font-family: "Roboto Mono",
+        monospace;
+    font-optical-sizing: auto;
 }
 
 /* Experites */
 #capability {
     color: aliceblue;
+    font-family: "Bungee Spice",
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 2rem;
 }
 
@@ -190,18 +217,27 @@ body {
 
 .work-demo {
     color: aliceblue;
-    font-size: 2em;
+    font-family: "Lobster",
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
 }
 
 .once-over {
+    color: aliceblue;
+    font-family: "Roboto Mono",
+        monospace;
+    font-optical-sizing: auto;
     color: aliceblue;
     font-size: 1.5em;
     margin: 10px 0 15px 0;
 }
 
 /* column/work box pic */
-.card {
-    margin: 10px;
+
+#cal-img {
+    height: 73.5vh;
 }
 
 .card:hover {
@@ -241,14 +277,22 @@ body {
     text-align: center;
 }
 
-.logo{
+.logo {
     width: 100px;
     height: 100px;
     border-radius: 4px;
 }
 
+.call {
+    font-family: "Dancing Script",
+        cursive;
+    font-optical-sizing: auto;
+    font-size: 2em;
+    font-weight: bold;
+}
+
 /* Footer */
-.footer{
+.footer {
     background-color: #0B2447;
     height: 40vh;
     text-align: center;
@@ -261,8 +305,29 @@ body {
 .footer-hading {
     color: aliceblue;
     padding-top: 11vh;
+    font-family: "Abril Fatface",
+        serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.footer-info-operation{
+.footer-info-operation {
     padding-top: 2%;
+}
+
+.footer-links {
+    padding: 8px;
+}
+
+#icons {
+    font-size: 3em;
+    color: white;
+    padding: 0.5%;
+}
+
+#icons:hover {
+    background-color: #F4F7F7;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #03001C;
 }
